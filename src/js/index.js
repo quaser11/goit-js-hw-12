@@ -4,6 +4,8 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PixabayApiService from "./pixabay-api-service";
 import ViewMoreBtnService from "./view-more-btn-service";
+import '../css/index.css'
+import 'modern-normalize'
 
 
 const searchForm = document.getElementById('search-form');
