@@ -1,24 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load ="partials/header.html" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="../node_modules/modern-normalize/modern-normalize.css">
+  <title>Document</title>
+</head>
+<body>
+<header class="header">
+  <form class="search-form" id="search-form">
+    <input
+      type="text"
+      name="searchQuery"
+      autocomplete="off"
+      placeholder="Search images..."
+    />
+    <button type="submit" class="submit-button">
+      <img src="./images/search-icon.png" alt="search" style="width: 16px; height: 16px">
+    </button>
+  </form>
+</header>
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+<section class="request-info-section">
+  <div class="container">
+    <div class="request-info-section__cards">
+    </div>
+    <div class="request-info-section__view-more__button__block">
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
-    <script type="module" src="./main.js"></script>
-  </body>
+      <button type="button" class="btn btn-primary">
+        <div class="spinner-border" role="status" style="width: 15px; height: 15px"></div>
+        <span class="btn-primary__text"></span>
+      </button>
+    </div>
+  </div>
+</section>
+<script src="./js/index.js" type="module"></script>
+</body>
 </html>
