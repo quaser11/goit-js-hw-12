@@ -2,11 +2,11 @@ import {Notify} from 'notiflix/build/notiflix-notify-aio';
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import PixabayApi from "./pixabay-api.js";
-import ViewMoreBtnService from "./view-more-btn-service";
-import '../css/index.css'
+import PixabayApi from "./js/pixabay-api.js";
+import ViewMoreBtnService from "./js/view-more-btn-service.js";
+import './css/index.css'
 import 'modern-normalize'
-import renderMarkup from './render-functions.js'
+import renderMarkup from './js/render-functions.js'
 
 
 const searchForm = document.getElementById('search-form');
@@ -73,7 +73,7 @@ function checkOn(response){
     viewMoreBtnService.hide()
   }
   if (response.hits.length === 0) {
-    Notify.failure('Sorry, there are no images matching your search query. Please try again.')
+    Notify.failure('Sorry, there are no img matching your search query. Please try again.')
     viewMoreBtnService.hide()
     return
   }
