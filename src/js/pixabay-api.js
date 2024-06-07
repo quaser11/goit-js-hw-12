@@ -4,7 +4,7 @@ import {Notify} from 'notiflix/build/notiflix-notify-aio';
 const BASE_URL = "https://pixabay.com/api/";
 const BASE_KEY = '44168245-b85e0b025332670cfa54a187d';
 
-export default class PixabayApiService {
+export default class PixabayApi {
   constructor(query) {
     this.query = query;
     this.page = 1
