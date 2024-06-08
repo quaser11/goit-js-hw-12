@@ -11,7 +11,7 @@ export default class PixabayApi {
   }
 
   async fetchByQuery() {
-    const perPage = 40
+    const perPage = 15
     const params = {
       'key': BASE_KEY,
       'q': this.query,
